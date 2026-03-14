@@ -1,2 +1,3 @@
-# web-quan-ao
-print("hello quan ao")
+Toàn: Men, page checkout, cart
+Trung: Home, login
+Tùng: Women, blog
