@@ -2,9 +2,7 @@
     width: 80%;
     margin: 0 auto;
 }
-a{
-    margin-right: 40px;
-}
+
 .header{
     display: flex;
     align-items: center;
@@ -21,16 +19,15 @@ a{
     font-weight: bold;
 }
 
-.menu{
-    display: flex;
-    gap: 40px;
+
+
+.centered-table a{
+    margin:0 15px;
+    text-decoration:none;
+    color:black;
 }
 
-.menu a{
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
-}
+
 
 .icons{
     display: flex;
@@ -81,3 +78,4 @@ a{
 .page-header span{
     margin:0 10px;
 }
+
