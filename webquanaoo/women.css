@@ -81,3 +81,9 @@ a{
 .page-header span{
     margin:0 10px;
 }
+
+.centered-table a{
+    margin-right:20px;
+    text-decoration:none;
+    color:black;
+}
