@@ -61,32 +61,201 @@
     </div>
 <table border="3px" width="100%" >
   <tr>
+<div class="sidebar">
     <td valign="top" width="20%" style="padding: 16px;">
-      Category
-      <select name="Category">
-        <option value=""><b>Category</b></option>
-        <option value="hanoi" selected>Category 1</option>
-        <option value="hochiminh">Category 2</option>
-      </select>
+        <select class="filter-select"><option>Category</option></select>
+        <select class="filter-select"><option>Type</option></select>
+        <select class="filter-select"><option>Size</option></select>
+        <select class="filter-select"><option>Color</option></select>
+    
+    <h3>Filter by Price</h3>
+        <div class="price-slider">
+            <input type="range" min="0" max="500" value="250" id="priceRange">
+            <p>0 to <span id="priceValue">500</span></p>
+        </div>
+
+    <h3>Filter by Genres</h3>
+        <label class="container"><input type="checkbox" name="genres"><span class="checkmark"></span> History </label>
+        <label class="container"><input type="checkbox" checked="checked" name="genres"><span class="checkmark"></span> Horror - Thriller </label>
+        <label class="container"><input type="checkbox" name="genres"><span class="checkmark"></span> Love Stories </label>
+        <label class="container"><input type="checkbox" name="genres"><span class="checkmark"></span> Sciene Fiction </label>
+        <label class="container"> <input type="checkbox" name="genres"><span class="checkmark"></span> Biography </label>
+    
+    <h3>Filter by Brands</h3>
+        <label class="container"><input type="checkbox" name="genres"><span class="checkmark"></span> Green Publications </label>
+        <label class="container"><input type="checkbox" checked="checked" name="genres"><span class="checkmark"></span> Anondo Publications </label>
+        <label class="container"><input type="checkbox" name="genres"><span class="checkmark"></span> Rinku Publications </label>
+        <label class="container"><input type="checkbox" name="genres"><span class="checkmark"></span> Sheba Publications </label>
+        <label class="container"> <input type="checkbox" name="genres"><span class="checkmark"></span> Red Publications </label>
     </td>
+</div>    
 
     <td align="center" width="80%" style="padding:0;">
       <div style="
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 4px;">
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest5.jpg" style="width:80%; height:500px; object-fit:cover;"></a>
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest6.jpg"style="width:80%; height:500px; object-fit:cover;"></a>
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest7.jpg" style="width:80%; height:500px; object-fit:cover;"></a>
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest8.jpg"style="width:80%; height:500px; object-fit:cover;"></a>
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest1.jpg"style="width:80%; height:500px; object-fit:cover;"></a>
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg"style="width:80%; height:500px; object-fit:cover;"></a>
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg"style="width:80%; height:500px; object-fit:cover;"></a>
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest3.jpg"style="width:80%; height:500px; object-fit:cover;"></a>
-        <a href="cream.html"><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest6.jpg"style="width:80%; height:500px; object-fit:cover;"></a>
-      </div>
-    </td>
-  </tr>
+        gap: 30px; 
+        padding: 20px;">
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest5.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest6.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest7.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest8.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest6.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest3.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest1.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+
+        <a href="cream.html" style="text-decoration: none; color: #444; text-align: center;">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" style="width:70%; height:400px; object-fit:cover;">
+            <p style="margin: 15px 0 5px 0; font-size: 16px;">Cashmere Tank + Bag</p>
+            <div style="font-size: 15px;">
+                <span style="color: #b08f26; font-weight: bold;">$98.00</span>
+                <span style="color: #ccc; text-decoration: line-through; margin-left: 10px;">$120.00</span>
+            </div>
+        </a>
+    </div>
+    <tr>
+    <td colspan="2" style="padding: 0; border: none;">
+    <footer class="site-footer">
+    <div class="subscribe-area">
+        <div class="container footer-flex">
+            <div class="subscribe-text">
+                <h2>Subscribe Newsletter</h2>
+                <p>Subscribe newsletter to get 5% on all products.</p>
+                <input type="email" name="email" id="email" placeholder="Enter your email"/> <br/>
+                
+            </div>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <input type="email" name="email" id="email" placeholder="Enter your email"/> <br/>
+                <button type="submit">Subscribe</button>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-info">
+                <img src="logo-capital-shop.png" alt="Capital Shop" class="footer-logo">
+            </div>
+            <div class="footer-col">
+                <h4>Shop Men</h4>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Shop Women</h4>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Baby Collection</h4>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright ©2026 All rights reserved | This template is made with ❤️ by Colorlib</p>
+        </div>
+    </div>
+</footer>
+</td>
+</tr>
+
 </table>
 </body>
 </html>
