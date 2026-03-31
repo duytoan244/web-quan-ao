@@ -1,5 +1,5 @@
 .centered-table {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -19,20 +19,37 @@
     font-weight: bold;
 }
 
-.centered-table a{
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s;
+    gap: 12px;
 }
 
-.icons{
+.social-icon:hover {
+    transform: scaleX(-1);
+    filter:brightness(0) saturate(100%) invert(32%) sepia(90%) saturate(2000%) hue-rotate(350deg);
+}
+
+.header-right-top {
+    display: flex;             /* Ép các div con nằm hàng ngang */
+    justify-content: flex-end; /* Đẩy toàn bộ sang bên phải */
+    align-items: center;       /* Căn giữa chữ và icon theo chiều dọc */
+    white-space: nowrap;       /* Tuyệt đối không cho phép rớt dòng */
+    width: 100%; 
+    text-align: right;
+}
+
+
+.top-nav-links {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    font-size: 13px;
 }
 
-.icons img{
-    width: 30px;
-    cursor: pointer;
+.separator {
+    margin: 0 10px;            /* Khoảng cách 2 bên thanh gạch đứng */
+    color: #ccc;
 }
 
 .font{
@@ -255,20 +272,35 @@ input[type=range] {
     padding-top: 20px;
     border-top: 1px solid #333;
     color: #888;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .subscribe-form {
-    display: flex;
-    gap: 0; 
+    display: flex;          /* Đưa input và button lên cùng 1 hàng */
+    align-items: stretch;    /* Chiều cao bằng nhau */
+    width: 500px;           /* Độ dài tổng thể */
+    margin: 0 auto;         /* Căn giữa cụm này */
 }
 
-.subscribe-form input[type="Email"] {
-    width: 300px;         
-    padding: 15px 20px;   
-    border: 1px solid #fff;
+.subscribe-form input[type="email"] {
+    flex: 1;                /* Chiếm hết phần còn lại của 500px */
+    padding: 15px 20px;
+    border: none;
     outline: none;
-    background: #fff;    
-    color: #333;          
+    background: #ffffff;    /* Màu trắng cho ô nhập liệu */
+    color: #333;            /* Màu chữ người dùng gõ vào */
+    font-size: 14px;
 }
+
+.subscribe-form button {
+    background-color: #ff2d2d; 
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
 
